@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Styles from "./NewTask.module.css";
-export default function AddNewTask({ allTasks, setAllTasks,setSelectedTasks }) {
+import { mainContext } from "../App/App";
+
+export default function AddNewTask() {
+  var {allTasks, setAllTasks,setSelectedTasks} = React.useContext(mainContext)
   const [inputValue, setInputValue] = useState("");
   function AddHandler() {
     setAllTasks([...allTasks, inputValue]);

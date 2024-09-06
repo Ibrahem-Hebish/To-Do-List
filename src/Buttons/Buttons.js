@@ -1,6 +1,9 @@
 import React from 'react'
+import { mainContext } from "../App/App";
 
-export default function Buttons({setSelectedTasks}) {
+
+export default function Buttons() {
+  const { setSelectedTasks } = React.useContext(mainContext)
     function AllHandler(){
         setSelectedTasks("all")
         localStorage.setItem("state","all")
