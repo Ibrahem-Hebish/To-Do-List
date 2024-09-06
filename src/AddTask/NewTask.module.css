@@ -1,0 +1,10 @@
+.content{
+    height:300px;
+}
+.inputClass{
+    width: 300px;
+    height: 35px;
+}
+.inputClass:focus{
+    border: 1px solid rgba(54, 94, 203, 0.473) !important;
+}
