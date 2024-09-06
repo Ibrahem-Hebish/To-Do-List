@@ -15,7 +15,7 @@ export default function Buttons({setSelectedTasks}) {
     }
   return (
     <div>
-      <button className='btn btn-outline-primary mb-3 d-block' onClick={AllHandler} >All</button>
+      <button className='btn btn-outline-primary mb-3 d-block' onClick={AllHandler} >Working</button>
       <button className='btn btn-outline-success mb-3 d-block' onClick={ConfirmedHandler} >Confirmed</button>
       <button className='btn btn-outline-danger d-block' onClick={DeletedHandler} >Deleted</button>
     </div>
